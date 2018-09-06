@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/SSID_TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/SSID"
+            android:layout_marginTop="40dp" />
+        <AutoCompleteTextView
+            android:id="@+id/Password_TextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Password"
+            android:layout_below="@+id/SSID_TextInput"
+            android:layout_marginTop="30dp" />
+        <Button
+            android:id="@+id/ButtonHttp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Dark"
+            android:text="@string/SendHttp"
+            android:layout_below="@+id/Password_TextInput"
+            android:layout_marginTop="60dp"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

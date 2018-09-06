@@ -1,0 +1,17 @@
+#!/bin/bash
+
+function install_os {
+    apt-get update
+    apt-get install curl git build-essential python-dev python-setuptools swig libpulse-dev portaudio19-dev libportaudio2 vlc-bin sox libsox-fmt-mp3 apache2 -y 
+    apt-get -y remove python-pip
+    #WARNING! Easy install is deprecated!
+    #run_python -m easy_install pip
+    apt-get install python-pip
+}
+
+function install_shairport-sync {
+
+    apt-get install autoconf libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev libsoxr-dev -y
+
+    install_shairport-sync_from_source
+}
